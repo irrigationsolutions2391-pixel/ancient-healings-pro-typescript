@@ -1,6 +1,6 @@
 {
   "include": ["src", "tests", "examples"],
-  "exclude": [],
+  "exclude": ["examples/next-app"],
   "compilerOptions": {
     "target": "es2020",
     "lib": ["es2020"],

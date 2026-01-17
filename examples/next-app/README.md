@@ -61,7 +61,7 @@ Once enabled and deployed:
 Vercel Web Analytics automatically tracks:
 
 - **Page Views**: All page navigations
-- **Web Vitals**: 
+- **Web Vitals**:
   - Largest Contentful Paint (LCP)
   - Cumulative Layout Shift (CLS)
   - First Input Delay (FID) / Interaction to Next Paint (INP)

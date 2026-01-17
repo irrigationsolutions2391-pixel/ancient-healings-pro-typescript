@@ -30,14 +30,14 @@ export default function Home() {
     <div className="container">
       <main>
         <h1>Ancient Healings Pro - Next.js Example</h1>
-        
+
         <section>
           <h2>Welcome to Vercel Web Analytics</h2>
           <p>
-            This example application demonstrates how to integrate the Ancient Healings Pro API
-            with a Next.js application and Vercel Web Analytics.
+            This example application demonstrates how to integrate the Ancient Healings Pro API with a Next.js
+            application and Vercel Web Analytics.
           </p>
-          
+
           <h3>Features</h3>
           <ul>
             <li>✅ Next.js App Router integration</li>
@@ -80,8 +80,8 @@ export default function Home() {
         <section>
           <h3>Analytics Integration</h3>
           <p>
-            Vercel Web Analytics is automatically integrated via the Analytics component
-            in the root layout. Track:
+            Vercel Web Analytics is automatically integrated via the Analytics component in the root layout.
+            Track:
           </p>
           <ul>
             <li>Page views</li>
@@ -100,9 +100,13 @@ export default function Home() {
           Learn more about{' '}
           <a href="https://vercel.com/docs/analytics" target="_blank" rel="noopener noreferrer">
             Vercel Web Analytics
-          </a>
-          {' '}and{' '}
-          <a href="https://github.com/stainless-sdks/ancient-healings-pro-typescript" target="_blank" rel="noopener noreferrer">
+          </a>{' '}
+          and{' '}
+          <a
+            href="https://github.com/stainless-sdks/ancient-healings-pro-typescript"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Ancient Healings Pro SDK
           </a>
         </p>
