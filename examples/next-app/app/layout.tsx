@@ -7,11 +7,7 @@ export const metadata: Metadata = {
   description: 'Example Next.js application using Ancient Healings Pro API with Vercel Web Analytics',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
