@@ -2,7 +2,7 @@ name: Release Doctor
 on:
   pull_request:
     branches:
-      - main
+      - vercel/vercel-web-analytics-to-projec-hjnie4
   workflow_dispatch:
 
 jobs:
