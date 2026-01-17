@@ -1,4 +1,4 @@
-import { createPathTagFunction, encodeURIPath } from 'ancient-healings-pro/internal/utils/path';
+import { createPathTagFunction, encodeURIPath } from 'alejandros.8-pyt-scry./internal/utils/path';
 import { inspect } from 'node:util';
 import { runInNewContext } from 'node:vm';
 

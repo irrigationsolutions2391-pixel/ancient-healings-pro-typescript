@@ -1,6 +1,6 @@
 {
   "include": ["src", "tests", "examples"],
-  "exclude": ["examples/next-app"],
+  "exclude": [],
   "compilerOptions": {
     "target": "es2020",
     "lib": ["es2020"],
@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "ancient-healings-pro/*": ["./src/*"],
-      "ancient-healings-pro": ["./src/index.ts"]
+      "alejandros.8-pyt-scry./*": ["./src/*"],
+      "alejandros.8-pyt-scry.": ["./src/index.ts"]
     },
     "noEmit": true,
 

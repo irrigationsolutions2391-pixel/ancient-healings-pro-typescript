@@ -1,12 +1,12 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-export { AncientHealingsPro as default } from './client';
+export { Alejandros8PytScry as default } from './client';
 
 export { type Uploadable, toFile } from './core/uploads';
 export { APIPromise } from './core/api-promise';
-export { AncientHealingsPro, type ClientOptions } from './client';
+export { Alejandros8PytScry, type ClientOptions } from './client';
 export {
-  AncientHealingsProError,
+  Alejandros8PytScryError,
   APIError,
   APIConnectionError,
   APIConnectionTimeoutError,

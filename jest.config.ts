@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^ancient-healings-pro$': '<rootDir>/src/index.ts',
-    '^ancient-healings-pro/(.*)$': '<rootDir>/src/$1',
+    '^alejandros.8-pyt-scry.$': '<rootDir>/src/index.ts',
+    '^alejandros.8-pyt-scry./(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',

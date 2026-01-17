@@ -1,11 +1,11 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import type { AncientHealingsPro } from '../client';
+import type { Alejandros8PytScry } from '../client';
 
 export abstract class APIResource {
-  protected _client: AncientHealingsPro;
+  protected _client: Alejandros8PytScry;
 
-  constructor(client: AncientHealingsPro) {
+  constructor(client: Alejandros8PytScry) {
     this._client = client;
   }
 }

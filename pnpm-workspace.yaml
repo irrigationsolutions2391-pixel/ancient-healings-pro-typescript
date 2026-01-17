@@ -2,4 +2,4 @@ onlyBuiltDependencies:
   - '@swc/core'
 minimumReleaseAge: 1440
 minimumReleaseAgeExclude:
-  - ancient-healings-pro
+  - alejandros.8-pyt-scry.

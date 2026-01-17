@@ -1,12 +1,12 @@
 {
-  "name": "ancient-healings-pro",
+  "name": "alejandros.8-pyt-scry.",
   "version": "0.0.1",
-  "description": "The official TypeScript library for the Ancient Healings Pro API",
-  "author": "Ancient Healings Pro <>",
+  "description": "The official TypeScript library for the Alejandros 8 Pyt Scry API",
+  "author": "Alejandros 8 Pyt Scry <>",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "type": "commonjs",
-  "repository": "github:stainless-sdks/ancient-healings-pro-typescript",
+  "repository": "github:irrigationsolutions2391-pixel/ancient-healings-pro-typescript",
   "license": "Apache-2.0",
   "packageManager": "pnpm@10.24.0",
   "files": [

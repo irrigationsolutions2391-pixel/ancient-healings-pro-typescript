@@ -10,7 +10,7 @@ export default tseslint.config(
       parserOptions: { sourceType: 'module' },
     },
     files: ['**/*.ts', '**/*.mts', '**/*.cts', '**/*.js', '**/*.mjs', '**/*.cjs'],
-    ignores: ['dist/', 'examples/**/*.tsx', 'examples/**/*.jsx'],
+    ignores: ['dist/'],
     plugins: {
       '@typescript-eslint': tseslint.plugin,
       'unused-imports': unusedImports,
@@ -25,7 +25,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^ancient-healings-pro(/.*)?',
+              regex: '^alejandros.8-pyt-scry.(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],

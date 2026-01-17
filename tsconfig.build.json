@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "ancient-healings-pro/*": ["./dist/src/*"],
-      "ancient-healings-pro": ["./dist/src/index.ts"]
+      "alejandros.8-pyt-scry./*": ["./dist/src/*"],
+      "alejandros.8-pyt-scry.": ["./dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,

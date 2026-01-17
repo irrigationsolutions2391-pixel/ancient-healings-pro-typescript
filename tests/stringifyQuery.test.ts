@@ -1,8 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { AncientHealingsPro } from 'ancient-healings-pro';
+import { Alejandros8PytScry } from 'alejandros.8-pyt-scry.';
 
-const { stringifyQuery } = AncientHealingsPro.prototype as any;
+const { stringifyQuery } = Alejandros8PytScry.prototype as any;
 
 describe(stringifyQuery, () => {
   for (const [input, expected] of [

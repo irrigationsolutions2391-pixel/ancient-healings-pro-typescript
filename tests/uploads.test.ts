@@ -1,6 +1,6 @@
 import fs from 'fs';
-import type { ResponseLike } from 'ancient-healings-pro/internal/to-file';
-import { toFile } from 'ancient-healings-pro/core/uploads';
+import type { ResponseLike } from 'alejandros.8-pyt-scry./internal/to-file';
+import { toFile } from 'alejandros.8-pyt-scry./core/uploads';
 import { File } from 'node:buffer';
 
 class MyClass {
@@ -97,7 +97,7 @@ describe('missing File error message', () => {
   });
 
   test('is thrown', async () => {
-    const uploads = await import('ancient-healings-pro/core/uploads');
+    const uploads = await import('alejandros.8-pyt-scry./core/uploads');
     await expect(
       uploads.toFile(mockResponse({ url: 'https://example.com/my/audio.mp3' })),
     ).rejects.toMatchInlineSnapshot(

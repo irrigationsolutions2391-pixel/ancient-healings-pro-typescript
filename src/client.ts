@@ -63,7 +63,7 @@ export interface ClientOptions {
   /**
    * Override the default base URL for the API, e.g., "https://api.example.com/v2/"
    *
-   * Defaults to process.env['ANCIENT_HEALINGS_PRO_BASE_URL'].
+   * Defaults to process.env['ALEJANDROS_8_PYT_SCRY_BASE_URL'].
    */
   baseURL?: string | null | undefined;
 
@@ -117,7 +117,7 @@ export interface ClientOptions {
   /**
    * Set the log level.
    *
-   * Defaults to process.env['ANCIENT_HEALINGS_PRO_LOG'] or 'warn' if it isn't set.
+   * Defaults to process.env['ALEJANDROS_8_PYT_SCRY_LOG'] or 'warn' if it isn't set.
    */
   logLevel?: LogLevel | undefined;
 
@@ -130,9 +130,9 @@ export interface ClientOptions {
 }
 
 /**
- * API Client for interfacing with the Ancient Healings Pro API.
+ * API Client for interfacing with the Alejandros 8 Pyt Scry API.
  */
-export class AncientHealingsPro {
+export class Alejandros8PytScry {
   apiKey: string;
 
   baseURL: string;
@@ -148,10 +148,10 @@ export class AncientHealingsPro {
   private _options: ClientOptions;
 
   /**
-   * API Client for interfacing with the Ancient Healings Pro API.
+   * API Client for interfacing with the Alejandros 8 Pyt Scry API.
    *
    * @param {string | undefined} [opts.apiKey=process.env['PETSTORE_API_KEY'] ?? undefined]
-   * @param {string} [opts.baseURL=process.env['ANCIENT_HEALINGS_PRO_BASE_URL'] ?? https://petstore3.swagger.io/api/v3] - Override the default base URL for the API.
+   * @param {string} [opts.baseURL=process.env['ALEJANDROS_8_PYT_SCRY_BASE_URL'] ?? https://petstore3.swagger.io/api/v3] - Override the default base URL for the API.
    * @param {number} [opts.timeout=1 minute] - The maximum amount of time (in milliseconds) the client will wait for a response before timing out.
    * @param {MergedRequestInit} [opts.fetchOptions] - Additional `RequestInit` options to be passed to `fetch` calls.
    * @param {Fetch} [opts.fetch] - Specify a custom `fetch` function implementation.
@@ -160,13 +160,13 @@ export class AncientHealingsPro {
    * @param {Record<string, string | undefined>} opts.defaultQuery - Default query parameters to include with every request to the API.
    */
   constructor({
-    baseURL = readEnv('ANCIENT_HEALINGS_PRO_BASE_URL'),
+    baseURL = readEnv('ALEJANDROS_8_PYT_SCRY_BASE_URL'),
     apiKey = readEnv('PETSTORE_API_KEY'),
     ...opts
   }: ClientOptions = {}) {
     if (apiKey === undefined) {
-      throw new Errors.AncientHealingsProError(
-        "The PETSTORE_API_KEY environment variable is missing or empty; either provide it, or instantiate the AncientHealingsPro client with an apiKey option, like new AncientHealingsPro({ apiKey: 'My API Key' }).",
+      throw new Errors.Alejandros8PytScryError(
+        "The PETSTORE_API_KEY environment variable is missing or empty; either provide it, or instantiate the Alejandros8PytScry client with an apiKey option, like new Alejandros8PytScry({ apiKey: 'My API Key' }).",
       );
     }
 
@@ -177,14 +177,14 @@ export class AncientHealingsPro {
     };
 
     this.baseURL = options.baseURL!;
-    this.timeout = options.timeout ?? AncientHealingsPro.DEFAULT_TIMEOUT /* 1 minute */;
+    this.timeout = options.timeout ?? Alejandros8PytScry.DEFAULT_TIMEOUT /* 1 minute */;
     this.logger = options.logger ?? console;
     const defaultLogLevel = 'warn';
     // Set default logLevel early so that we can log a warning in parseLogLevel.
     this.logLevel = defaultLogLevel;
     this.logLevel =
       parseLogLevel(options.logLevel, 'ClientOptions.logLevel', this) ??
-      parseLogLevel(readEnv('ANCIENT_HEALINGS_PRO_LOG'), "process.env['ANCIENT_HEALINGS_PRO_LOG']", this) ??
+      parseLogLevel(readEnv('ALEJANDROS_8_PYT_SCRY_LOG'), "process.env['ALEJANDROS_8_PYT_SCRY_LOG']", this) ??
       defaultLogLevel;
     this.fetchOptions = options.fetchOptions;
     this.maxRetries = options.maxRetries ?? 2;
@@ -703,10 +703,10 @@ export class AncientHealingsPro {
     }
   }
 
-  static AncientHealingsPro = this;
+  static Alejandros8PytScry = this;
   static DEFAULT_TIMEOUT = 60000; // 1 minute
 
-  static AncientHealingsProError = Errors.AncientHealingsProError;
+  static Alejandros8PytScryError = Errors.Alejandros8PytScryError;
   static APIError = Errors.APIError;
   static APIConnectionError = Errors.APIConnectionError;
   static APIConnectionTimeoutError = Errors.APIConnectionTimeoutError;
@@ -727,11 +727,11 @@ export class AncientHealingsPro {
   users: API.Users = new API.Users(this);
 }
 
-AncientHealingsPro.Pets = Pets;
-AncientHealingsPro.Store = Store;
-AncientHealingsPro.Users = Users;
+Alejandros8PytScry.Pets = Pets;
+Alejandros8PytScry.Store = Store;
+Alejandros8PytScry.Users = Users;
 
-export declare namespace AncientHealingsPro {
+export declare namespace Alejandros8PytScry {
   export type RequestOptions = Opts.RequestOptions;
 
   export {

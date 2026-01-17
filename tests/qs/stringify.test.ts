@@ -1,7 +1,7 @@
 import iconv from 'iconv-lite';
-import { stringify } from 'ancient-healings-pro/internal/qs';
-import { encode } from 'ancient-healings-pro/internal/qs/utils';
-import { StringifyOptions } from 'ancient-healings-pro/internal/qs/types';
+import { stringify } from 'alejandros.8-pyt-scry./internal/qs';
+import { encode } from 'alejandros.8-pyt-scry./internal/qs/utils';
+import { StringifyOptions } from 'alejandros.8-pyt-scry./internal/qs/types';
 import { empty_test_cases } from './empty-keys-cases';
 import assert from 'assert';
 

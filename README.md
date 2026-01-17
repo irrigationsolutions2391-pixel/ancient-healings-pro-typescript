@@ -1,8 +1,8 @@
-# Ancient Healings Pro TypeScript API Library
+# Alejandros 8 Pyt Scry TypeScript API Library
 
-[![NPM version](<https://img.shields.io/npm/v/ancient-healings-pro.svg?label=npm%20(stable)>)](https://npmjs.org/package/ancient-healings-pro) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/ancient-healings-pro)
+[![NPM version](<https://img.shields.io/npm/v/alejandros.8-pyt-scry..svg?label=npm%20(stable)>)](https://npmjs.org/package/alejandros.8-pyt-scry.) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/alejandros.8-pyt-scry.)
 
-This library provides convenient access to the Ancient Healings Pro REST API from server-side TypeScript or JavaScript.
+This library provides convenient access to the Alejandros 8 Pyt Scry REST API from server-side TypeScript or JavaScript.
 
 The full API of this library can be found in [api.md](api.md).
 
@@ -11,11 +11,11 @@ It is generated with [Stainless](https://www.stainless.com/).
 ## Installation
 
 ```sh
-npm install git+ssh://git@github.com:stainless-sdks/ancient-healings-pro-typescript.git
+npm install git+ssh://git@github.com:irrigationsolutions2391-pixel/ancient-healings-pro-typescript.git
 ```
 
 > [!NOTE]
-> Once this package is [published to npm](https://www.stainless.com/docs/guides/publish), this will become: `npm install ancient-healings-pro`
+> Once this package is [published to npm](https://www.stainless.com/docs/guides/publish), this will become: `npm install alejandros.8-pyt-scry.`
 
 ## Usage
 
@@ -23,9 +23,9 @@ The full API of this library can be found in [api.md](api.md).
 
 <!-- prettier-ignore -->
 ```js
-import AncientHealingsPro from 'ancient-healings-pro';
+import Alejandros8PytScry from 'alejandros.8-pyt-scry.';
 
-const client = new AncientHealingsPro({
+const client = new Alejandros8PytScry({
   apiKey: process.env['PETSTORE_API_KEY'], // This is the default and can be omitted
 });
 
@@ -44,13 +44,13 @@ This library includes TypeScript definitions for all request params and response
 
 <!-- prettier-ignore -->
 ```ts
-import AncientHealingsPro from 'ancient-healings-pro';
+import Alejandros8PytScry from 'alejandros.8-pyt-scry.';
 
-const client = new AncientHealingsPro({
+const client = new Alejandros8PytScry({
   apiKey: process.env['PETSTORE_API_KEY'], // This is the default and can be omitted
 });
 
-const response: AncientHealingsPro.StoreListInventoryResponse = await client.store.listInventory();
+const response: Alejandros8PytScry.StoreListInventoryResponse = await client.store.listInventory();
 ```
 
 Documentation for each method, request param, and response field are available in docstrings and will appear on hover in most modern editors.
@@ -64,7 +64,7 @@ a subclass of `APIError` will be thrown:
 <!-- prettier-ignore -->
 ```ts
 const response = await client.store.listInventory().catch(async (err) => {
-  if (err instanceof AncientHealingsPro.APIError) {
+  if (err instanceof Alejandros8PytScry.APIError) {
     console.log(err.status); // 400
     console.log(err.name); // BadRequestError
     console.log(err.headers); // {server: 'nginx', ...}
@@ -98,7 +98,7 @@ You can use the `maxRetries` option to configure or disable this:
 <!-- prettier-ignore -->
 ```js
 // Configure the default for all requests:
-const client = new AncientHealingsPro({
+const client = new Alejandros8PytScry({
   maxRetries: 0, // default is 2
 });
 
@@ -115,7 +115,7 @@ Requests time out after 1 minute by default. You can configure this with a `time
 <!-- prettier-ignore -->
 ```ts
 // Configure the default for all requests:
-const client = new AncientHealingsPro({
+const client = new Alejandros8PytScry({
   timeout: 20 * 1000, // 20 seconds (default is 1 minute)
 });
 
@@ -141,7 +141,7 @@ Unlike `.asResponse()` this method consumes the body, returning once it is parse
 
 <!-- prettier-ignore -->
 ```ts
-const client = new AncientHealingsPro();
+const client = new Alejandros8PytScry();
 
 const response = await client.store.listInventory().asResponse();
 console.log(response.headers.get('X-My-Header'));
@@ -162,13 +162,13 @@ console.log(response);
 
 The log level can be configured in two ways:
 
-1. Via the `ANCIENT_HEALINGS_PRO_LOG` environment variable
+1. Via the `ALEJANDROS_8_PYT_SCRY_LOG` environment variable
 2. Using the `logLevel` client option (overrides the environment variable if set)
 
 ```ts
-import AncientHealingsPro from 'ancient-healings-pro';
+import Alejandros8PytScry from 'alejandros.8-pyt-scry.';
 
-const client = new AncientHealingsPro({
+const client = new Alejandros8PytScry({
   logLevel: 'debug', // Show all log messages
 });
 ```
@@ -194,13 +194,13 @@ When providing a custom logger, the `logLevel` option still controls which messa
 below the configured level will not be sent to your logger.
 
 ```ts
-import AncientHealingsPro from 'ancient-healings-pro';
+import Alejandros8PytScry from 'alejandros.8-pyt-scry.';
 import pino from 'pino';
 
 const logger = pino();
 
-const client = new AncientHealingsPro({
-  logger: logger.child({ name: 'AncientHealingsPro' }),
+const client = new Alejandros8PytScry({
+  logger: logger.child({ name: 'Alejandros8PytScry' }),
   logLevel: 'debug', // Send all messages to pino, allowing it to filter
 });
 ```
@@ -263,10 +263,10 @@ globalThis.fetch = fetch;
 Or pass it to the client:
 
 ```ts
-import AncientHealingsPro from 'ancient-healings-pro';
+import Alejandros8PytScry from 'alejandros.8-pyt-scry.';
 import fetch from 'my-fetch';
 
-const client = new AncientHealingsPro({ fetch });
+const client = new Alejandros8PytScry({ fetch });
 ```
 
 ### Fetch options
@@ -274,9 +274,9 @@ const client = new AncientHealingsPro({ fetch });
 If you want to set custom `fetch` options without overriding the `fetch` function, you can provide a `fetchOptions` object when instantiating the client or making a request. (Request-specific options override client options.)
 
 ```ts
-import AncientHealingsPro from 'ancient-healings-pro';
+import Alejandros8PytScry from 'alejandros.8-pyt-scry.';
 
-const client = new AncientHealingsPro({
+const client = new Alejandros8PytScry({
   fetchOptions: {
     // `RequestInit` options
   },
@@ -291,11 +291,11 @@ options to requests:
 <img src="https://raw.githubusercontent.com/stainless-api/sdk-assets/refs/heads/main/node.svg" align="top" width="18" height="21"> **Node** <sup>[[docs](https://github.com/nodejs/undici/blob/main/docs/docs/api/ProxyAgent.md#example---proxyagent-with-fetch)]</sup>
 
 ```ts
-import AncientHealingsPro from 'ancient-healings-pro';
+import Alejandros8PytScry from 'alejandros.8-pyt-scry.';
 import * as undici from 'undici';
 
 const proxyAgent = new undici.ProxyAgent('http://localhost:8888');
-const client = new AncientHealingsPro({
+const client = new Alejandros8PytScry({
   fetchOptions: {
     dispatcher: proxyAgent,
   },
@@ -305,9 +305,9 @@ const client = new AncientHealingsPro({
 <img src="https://raw.githubusercontent.com/stainless-api/sdk-assets/refs/heads/main/bun.svg" align="top" width="18" height="21"> **Bun** <sup>[[docs](https://bun.sh/guides/http/proxy)]</sup>
 
 ```ts
-import AncientHealingsPro from 'ancient-healings-pro';
+import Alejandros8PytScry from 'alejandros.8-pyt-scry.';
 
-const client = new AncientHealingsPro({
+const client = new Alejandros8PytScry({
   fetchOptions: {
     proxy: 'http://localhost:8888',
   },
@@ -317,10 +317,10 @@ const client = new AncientHealingsPro({
 <img src="https://raw.githubusercontent.com/stainless-api/sdk-assets/refs/heads/main/deno.svg" align="top" width="18" height="21"> **Deno** <sup>[[docs](https://docs.deno.com/api/deno/~/Deno.createHttpClient)]</sup>
 
 ```ts
-import AncientHealingsPro from 'npm:ancient-healings-pro';
+import Alejandros8PytScry from 'npm:alejandros.8-pyt-scry.';
 
 const httpClient = Deno.createHttpClient({ proxy: { url: 'http://localhost:8888' } });
-const client = new AncientHealingsPro({
+const client = new Alejandros8PytScry({
   fetchOptions: {
     client: httpClient,
   },
@@ -339,7 +339,7 @@ This package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) con
 
 We take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.
 
-We are keen for your feedback; please open an [issue](https://www.github.com/stainless-sdks/ancient-healings-pro-typescript/issues) with questions, bugs, or suggestions.
+We are keen for your feedback; please open an [issue](https://www.github.com/irrigationsolutions2391-pixel/ancient-healings-pro-typescript/issues) with questions, bugs, or suggestions.
 
 ## Requirements
 

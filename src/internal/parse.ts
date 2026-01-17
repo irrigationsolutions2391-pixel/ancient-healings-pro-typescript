@@ -1,7 +1,7 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
 import type { FinalRequestOptions } from './request-options';
-import { type AncientHealingsPro } from '../client';
+import { type Alejandros8PytScry } from '../client';
 import { formatRequestDetails, loggerFor } from './utils/log';
 
 export type APIResponseProps = {
@@ -14,7 +14,7 @@ export type APIResponseProps = {
 };
 
 export async function defaultParseResponse<T>(
-  client: AncientHealingsPro,
+  client: Alejandros8PytScry,
   props: APIResponseProps,
 ): Promise<T> {
   const { response, requestLogID, retryOfRequestLogID, startTime } = props;

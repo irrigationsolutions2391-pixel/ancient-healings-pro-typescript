@@ -1,8 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import AncientHealingsPro from 'ancient-healings-pro';
+import Alejandros8PytScry from 'alejandros.8-pyt-scry.';
 
-const client = new AncientHealingsPro({
+const client = new Alejandros8PytScry({
   apiKey: 'My API Key',
   baseURL: process.env['TEST_API_BASE_URL'] ?? 'http://127.0.0.1:4010',
 });

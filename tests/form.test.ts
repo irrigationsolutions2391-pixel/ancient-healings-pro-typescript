@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'ancient-healings-pro/internal/uploads';
-import { toFile } from 'ancient-healings-pro/core/uploads';
+import { multipartFormRequestOptions, createForm } from 'alejandros.8-pyt-scry./internal/uploads';
+import { toFile } from 'alejandros.8-pyt-scry./core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {

@@ -1,4 +1,4 @@
-import { fromBase64, toBase64 } from 'ancient-healings-pro/internal/utils/base64';
+import { fromBase64, toBase64 } from 'alejandros.8-pyt-scry./internal/utils/base64';
 
 describe.each(['Buffer', 'atob'])('with %s', (mode) => {
   let originalBuffer: BufferConstructor;
